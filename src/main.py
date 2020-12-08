@@ -7,10 +7,10 @@ os.environ['TF_CPP_MIN_LOG_LEVEL'] = '1'
 import matplotlib.pyplot as plt
 
 from utils import *
-from keras.models import Sequential
-from keras.layers import Convolution2D, MaxPooling2D, Dropout, Flatten, Dense
-from keras.wrappers.scikit_learn import KerasRegressor
-from keras.callbacks import ModelCheckpoint   
+from tensorflow.keras.models import Sequential
+from tensorflow.keras.layers import Convolution2D, MaxPooling2D, Dropout, Flatten, Dense
+from tensorflow.keras.wrappers.scikit_learn import KerasRegressor
+from tensorflow.keras.callbacks import ModelCheckpoint   
 
 # Load training set
 X_train, y_train = load_data()

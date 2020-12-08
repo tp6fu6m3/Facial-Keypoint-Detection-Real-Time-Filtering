@@ -7,7 +7,7 @@ os.environ['TF_CPP_MIN_LOG_LEVEL'] = '1'
 import numpy as np
 import cv2
 import time
-from keras.models import load_model
+from tensorflow.keras.models import load_model
 
 face_cascade = cv2.CascadeClassifier('../opencv_classifier/haarcascade_frontalface_default.xml')
 model = load_model('../model/my_model.h5')
@@ -71,7 +71,7 @@ def filter(image, mode):
 
 if __name__ == '__main__':
     cv2.namedWindow('face detection activated', cv2.WINDOW_KEEPRATIO)
-    vc = cv2.VideoCapture(0, cv2.CAP_V4L)
+    vc = cv2.VideoCapture(0)
     assert vc.isOpened()
     
     #keypoint, sunglasses, eyes, Takeshi, Bamboo

@@ -33,18 +33,18 @@ for z in data/*.zip; do unzip "$z" -d data; done
 
 3. Install a few required pip packages (including OpenCV).
 ```
-pip install -r requirements.txt
+pip3 install -r requirements.txt
 ```
 
 4. Train the model and save it as '.h5' format.
 ```
 cd src
-python main.py
+python3 main.py
 ```
 
 5. Demonstrate the real time filtering with the well-trained model.
 ```
-python demo.py
+python3 demo.py
 ```
 	- press 'q' to quit the program
 	- press 'w' to previous filter
