@@ -32,9 +32,9 @@ def filter(image, mode):
             image_copy[y:y+h,x:x+w] = roi_color
         
         elif mode==2:
-            cv2.circle(image_copy, (int((landmarks[0]+1)*roi_color.shape[0]/2+x),int((landmarks[1]+1)*roi_color.shape[1]/2+y)), w//5, (41, 36, 33), -1)
+            cv2.circle(image_copy, (int((landmarks[0]+1)*roi_color.shape[0]/2+x),int((landmarks[1]+1)*roi_color.shape[1]/2+y)), w//4, (41, 36, 33), -1)
             cv2.circle(image_copy, (int((landmarks[0]+1)*roi_color.shape[0]/2+x),int((landmarks[1]+1)*roi_color.shape[1]/2+y)), max(1, w//25), (255, 255, 255), -1)
-            cv2.circle(image_copy, (int((landmarks[2]+1)*roi_color.shape[0]/2+x),int((landmarks[3]+1)*roi_color.shape[1]/2+y)), w//5, (41, 36, 33), -1)
+            cv2.circle(image_copy, (int((landmarks[2]+1)*roi_color.shape[0]/2+x),int((landmarks[3]+1)*roi_color.shape[1]/2+y)), w//4, (41, 36, 33), -1)
             cv2.circle(image_copy, (int((landmarks[2]+1)*roi_color.shape[0]/2+x),int((landmarks[3]+1)*roi_color.shape[1]/2+y)), max(1, w//25), (255, 255, 255), -1)
         
         elif mode==3:
