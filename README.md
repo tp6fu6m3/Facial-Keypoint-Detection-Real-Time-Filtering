@@ -1,6 +1,6 @@
 # Facial Keypoint Detection Real-Time Filtering
 
-Competition website on [**Facial Keypoint Detection**](https://www.kaggle.com/c/facial-keypoints-detection)
+Competition website on [**Kaggle Facial Keypoint Detection**](https://www.kaggle.com/c/facial-keypoints-detection)
 
 Built an end-to-end facial keypoint recognition system. Facial keypoints include points around the eyes, nose, and mouth on any face and are used in many applications, from facial tracking to emotion recognition. The completed project takes in any image containing faces and identifies the location of each face and their facial keypoints.
 
@@ -8,7 +8,7 @@ Built an end-to-end facial keypoint recognition system. Facial keypoints include
 - Facial Keypoint Detection
 - OpenCV
 
-## Project Instructions
+## Quick Start
 
 ### Linux user
 
@@ -25,13 +25,10 @@ cd Facial-Keypoint-Detection-Real-Time-Filtering
 	- go to https://www.kaggle.com/c/facial-keypoints-detection
 	- join competition
 ```
-pip install kaggle --user
+pip3 install kaggle
 kaggle competitions download -c facial-keypoints-detection
 unzip facial-keypoints-detection.zip -d data
-cd data
-unzip training.zip
-unzip test.zip
-cd ..
+for z in data/*.zip; do unzip "$z" -d data; done
 ```
 
 3. Install a few required pip packages (including OpenCV).
