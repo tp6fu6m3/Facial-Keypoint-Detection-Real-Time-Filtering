@@ -11,6 +11,9 @@ from tensorflow.keras.models import load_model
 
 parser = argparse.ArgumentParser()
 parser.add_argument("--no_camera", action="store_true", help="Process this program on local video")
+parser.add_argument("--scaleFactor",  type=float, default=1.3, help="The scaleFactor of detectMultiScale")
+parser.add_argument("--minNeighbors",  type=int, default=2, help="The minNeighbors of detectMultiScale")
+parser.add_argument("--minSize",  type=int, default=20, help="The minSize of detectMultiScale")
 args = parser.parse_args()
 
 face_cascade = cv2.CascadeClassifier('../opencv_classifier/haarcascade_frontalface_default.xml')
