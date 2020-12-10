@@ -49,9 +49,9 @@ python3 main.py
 
 ```
 python3 demo.py
+python3 demo.py --no_camera     // if you don't have a camera on your device
 ```
 
--   if you don't have a camera, add `--no_camera`
 -   press `q` to quit the program
 -   press `w` to previous filter
 -   press `e` to next filter
@@ -67,7 +67,7 @@ python3 demo.py
 
 2. Download the training and test data on Kaggle.
 
-	- go to [**Facial Keypoint Detection Data Description**](https://www.kaggle.com/c/facial-keypoints-detection/data)
+	- go to [**Data Description**](https://www.kaggle.com/c/facial-keypoints-detection/data)
 	- join competition
 	- Download ALL
 	- unzip facial-keypoints-detection.zip under Facial-Keypoint-Detection-Real-Time-Filtering-main/data/
@@ -89,9 +89,9 @@ python main.py
 
 ```
 python demo.py
+python demo.py --no_camera     // if you don't have a camera on your device
 ```
 
--   if you don't have a camera, add `--no_camera`
 -   press `q` to quit the program
 -   press `w` to previous filter
 -   press `e` to next filter
