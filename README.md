@@ -61,13 +61,14 @@ python3 demo.py
 1. Download the repository, and navigate to the downloaded folder.
 
 	- go to [**Facial Keypoint Detection Real-Time Filtering**](https://github.com/tp6fu6m3/Facial-Keypoint-Detection-Real-Time-Filtering)
-	- go to Code → Download [**ZIP**](https://github.com/tp6fu6m3/Facial-Keypoint-Detection-Real-Time-Filtering/archive/main.zip)
+	- Download [**ZIP**](https://github.com/tp6fu6m3/Facial-Keypoint-Detection-Real-Time-Filtering/archive/main.zip)
 	- unzip Facial-Keypoint-Detection-Real-Time-Filtering-main.zip
 	- cd Facial-Keypoint-Detection-Real-Time-Filtering-main
 
 2. Download the training and test data on Kaggle.
 
 	- go to [**Facial Keypoint Detection Data Description**](https://www.kaggle.com/c/facial-keypoints-detection/data)
+	- join competition
 	- Download ALL
 	- unzip facial-keypoints-detection.zip under Facial-Keypoint-Detection-Real-Time-Filtering-main/data/
 
