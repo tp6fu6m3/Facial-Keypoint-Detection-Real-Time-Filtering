@@ -86,11 +86,12 @@ python main.py
 
 5. Demonstrate the real time filtering with the well-trained model.
 
+```
+python demo.py
+```
+
 	- if you don't have a camera, add `--no_camera`
 	- press `q` to quit the program
 	- press `w` to previous filter
 	- press `e` to next filter
 
-```
-python demo.py
-```
