@@ -90,8 +90,8 @@ python main.py
 python demo.py
 ```
 
-	- if you don't have a camera, add `--no_camera`
-	- press `q` to quit the program
-	- press `w` to previous filter
-	- press `e` to next filter
+-   if you don't have a camera, add `--no_camera`
+-   press `q` to quit the program
+-   press `w` to previous filter
+-   press `e` to next filter
 
