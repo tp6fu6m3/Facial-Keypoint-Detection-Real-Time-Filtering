@@ -1,22 +1,25 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-import os
-os.environ['TF_CPP_MIN_LOG_LEVEL'] = '1'
-
 import numpy as np
 import cv2
-import time
+import argparse
+import os
+
+os.environ['TF_CPP_MIN_LOG_LEVEL'] = '1'
 from tensorflow.keras.models import load_model
+
+parser = argparse.ArgumentParser()
+parser.add_argument("--no_camera", action="store_true", help="Process this program on local video")
+args = parser.parse_args()
 
 face_cascade = cv2.CascadeClassifier('../opencv_classifier/haarcascade_frontalface_default.xml')
 model = load_model('../model/my_model.h5')
 
 def filter(image, mode):
     image_copy = np.copy(image)
-    #denoised_image = cv2.fastNlMeansDenoisingColored(image, None, 10, 10, 7, 21)
     image_gray = cv2.cvtColor(image, cv2.COLOR_RGB2GRAY)
-    faces = face_cascade.detectMultiScale(image_gray, 1.2, 3)
+    faces = face_cascade.detectMultiScale(image_gray, 1.3, 2, minSize = (20, 20))
     
     for (x,y,w,h) in faces:
         roi_color = image_copy[y:y+h, x:x+w]
@@ -71,7 +74,8 @@ def filter(image, mode):
 
 if __name__ == '__main__':
     cv2.namedWindow('face detection activated', cv2.WINDOW_KEEPRATIO)
-    vc = cv2.VideoCapture(0)
+    vc = cv2.VideoCapture('../video/sample_video.mp4') if (args.no_camera) else cv2.VideoCapture(0)
+    vc.set(cv2.CAP_PROP_FOURCC, cv2.VideoWriter_fourcc('M', 'J', 'P', 'G'))
     assert vc.isOpened()
     
     #keypoint, sunglasses, eyes, Takeshi, Bamboo
@@ -100,5 +104,4 @@ if __name__ == '__main__':
             mode = 3
         elif key & 0xFF == ord('g'):
             mode = 4
-        time.sleep(0.2)
     
