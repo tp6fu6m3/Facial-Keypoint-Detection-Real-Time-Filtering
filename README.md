@@ -1,5 +1,7 @@
 # Facial Keypoint Detection Real-Time Filtering
 
+## Introduction
+
 This project is able to run on [**NVIDIA Jetson Nano Developer Kit**](https://developer.nvidia.com/embedded/jetson-nano-developer-kit)
 
 Competition website is on [**Kaggle Facial Keypoint Detection**](https://www.kaggle.com/c/facial-keypoints-detection)
@@ -8,7 +10,11 @@ Built an end-to-end facial keypoint recognition system. Facial keypoints include
 
 ## Quick Start
 
-### Linux user
+- [Linux user](#Linux user)
+
+- [Windows user](#Windows user)
+
+## Linux user
 
 1. Clone the repository, and navigate to the downloaded folder.
 
@@ -56,7 +62,7 @@ python3 demo.py --no_camera     // if you don't have a camera on your device
 -   press `w` to previous filter
 -   press `e` to next filter
 
-### Windows user
+## Windows user
 
 1. Download the repository, and navigate to the downloaded folder.
 
