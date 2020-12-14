@@ -14,7 +14,7 @@ Built an end-to-end facial keypoint recognition system. Facial keypoints include
 
 - [Windows user](#windows)
 
-## Linux user
+## Linux
 
 1. Clone the repository, and navigate to the downloaded folder.
 
@@ -62,7 +62,7 @@ python3 demo.py --no_camera     // if you don't have a camera on your device
 -   press `w` to previous filter
 -   press `e` to next filter
 
-## Windows user
+## Windows
 
 1. Download the repository, and navigate to the downloaded folder.
 
