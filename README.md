@@ -10,9 +10,9 @@ Built an end-to-end facial keypoint recognition system. Facial keypoints include
 
 ## Quick Start
 
-- [Linux user](#Linux user)
+- [Linux user](#linux user)
 
-- [Windows user](#Windows user)
+- [Windows user](#windows)
 
 ## Linux user
 
